@@ -32,6 +32,10 @@ def main():
     answer = longest_absolute_file_path(test_string)
     assert answer == 0
 
+    test_string = "dir\n\tsubdir1\n\t\tfile1.someext\n\t\tfile2.some"
+    answer = longest_absolute_file_path(test_string)
+    assert answer == 25
+
 
 if __name__ == '__main__':
     main()
